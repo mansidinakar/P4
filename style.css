@@ -1,100 +1,114 @@
-/* Global styles */
-
-body {
-  font-family: 'Arial', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-a {
-  color: #007bff;
-}
-
-/* Navigation bar styles */
-
+/* Navbar */
 .navbar {
-  background-color: #f8f9fa;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
 }
 
 .navbar-brand {
-  font-weight: bold;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.nav-link {
-  font-weight: bold;
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    margin-right: 1rem;
 }
 
-/* Home page styles */
-
-.jumbotron {
-  background-image: url('https://via.placeholder.com/1500x400');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
-  height: 400px;
+/* Homepage */
+#home {
+    background-color: #f5f5f5;
+    padding: 4rem 0;
 }
 
-/* About page styles */
-
-.container p {
-  font-size: 1.2rem;
-  line-height: 1.6rem;
+#home h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
 }
 
-/* Shop page styles */
-
-.product {
-  margin-bottom: 3rem;
+#home img {
+    max-width: 100%;
 }
 
-.product img {
-  width: 100%;
-  height: auto;
+/* About Us Page */
+#about {
+    padding: 4rem 0;
 }
 
-.product h3 {
-  margin-top: 1rem;
+#about h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
 }
 
-.product p {
-  font-size: 1.2rem;
-  line-height: 1.6rem;
+#about p {
+    font-size: 1.2rem;
 }
 
-.product .btn {
-  margin-top: 1rem;
+/* Contact Us Page */
+#contact {
+    padding: 4rem 0;
 }
 
-/* Gallery page styles */
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+#contact h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
 }
 
-.gallery img {
-  width: 300px;
-  height: 200px;
-  margin: 1rem;
-  object-fit: cover;
+#contact p {
+    font-size: 1.2rem;
 }
 
-/* Contact page styles */
+/* Shop Page */
+#shop {
+    padding: 4rem 0;
+}
 
-.form-control {
-  margin-bottom: 1rem;
+#shop h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.card {
+    border: none;
+    margin-bottom: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    color: #6c757d;
 }
 
 .btn {
-  background-color: #007bff;
-  border-color: #007bff;
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
-  background-color: #0069d9;
-  border-color: #0062cc;
+    background-color: #0069d9;
 }
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
