@@ -1,172 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>MansiClicks</title>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> MansiClicks</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
   <style>
-	      /* DEVELOPER: JOSUE MAYANGA, IS117-006, SPRING 2023 */
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      background-color: #000000;
-      margin-bottom: 0;
-      border-radius: 0;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #4169E1;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      color: #000000;
+    header {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding: 10px;
     }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      padding-left: 10px;
     }
-    		/* Style for card container */
-		.card-container {
-		  display: flex;
-		  flex-wrap: wrap;
-		  justify-content: space-between;
-		  max-width: 1000px;
-		  margin: 0 auto;
-		}
-
-		/* Style for cards */
-		.card {
-		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-		  width: calc(50% - 20px);
-		  margin-bottom: 40px;
-		  text-align: center;
-		  font-family: arial;
-		  padding: 20px;
-		  background-color: #f2f2f2;
-		}
-
-		/* Style for card image */
-		.card img {
-		  max-width: 100%;
-		  height: auto;
-		  margin-bottom: 20px;
-		}
-
-		/* Style for button */
-		.button {
-		  background-color: #4CAF50;
-		  border: none;
-		  color: white;
-		  padding: 10px 20px;
-		  text-align: center;
-		  text-decoration: none;
-		  display: inline-block;
-		  font-size: 16px;
-		  margin: 4px 2px;
-		  cursor: pointer;
-		}
-		
-		/* Style for title */
-		h1 {
-		  text-align: center;
-		  margin-top: 50px;
-		  font-family: arial;
-		}
-
-		/* Style for bottom paragraph */
-		p {
-		  max-width: 800px;
-		  margin: 0 auto;
-		  padding: 20px;
-		  text-align: center;
-		  font-family: arial;
-		}
-    
-    p{
-      font-size: 20px;
+    header ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
     }
-
-
-
+    header ul li {
+      margin: 0 10px;
+    }
+    header ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    header ul li:hover {
+      background-color: #555;
+    }
+    header ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      background-color: #333;
+      padding: 0;
+    }
+    header ul ul li {
+      width: 200px;
+      margin: 0;
+    }
+    header ul ul li a {
+      font-size: 16px;
+    }
+    header ul li:hover > ul {
+      display: block;
+    }
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+    }
+    .image-container img {
+      width: 50%;
+    }
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 50px;
+    }
   </style>
-	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
-
 </head>
 <body>
+  <header>
+    <h1>MansiClicks</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a>
+        <ul>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Product Choice</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact Us</a>
+        <ul>
+          <li><a href="#">Social Media</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Cart</a>
+        <ul>
+          <li><a href="#">Billing Info</a></li>
+          <li><a href="#">Checkout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+  <div class="image-container">
+    <img src="images/IMG_3004.jpg" alt="Bird on a fence">
+  </div>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <p> Preseting some of my latest photographs for you to view and shop 
+	      </body>
+	    <footer>
+  <p>&copy; 2023, Mansi Dinakar, Newark NJ 07103</p>
+</footer>
+	    </html>
+    
 
-	<!-- Navigation bar -->
-	<nav>
-		<h1>MansiClicks</h1>
-		<ul>
-			<li>
-				<a href="#">Home</a>
-			</li>
-			<li>
-				<a href="#">About Us</a>
-				<ul>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="#">Product Choice</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">Contact Us</a>
-				<ul>
-					<li><a href="#">Social Media</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">Cart</a>
-				<ul>
-					<li><a href="#">Billing Info</a></li>
-					<li><a href="#">Checkout</a></li>
-				</ul>
-			</li>
-		</ul>
-	</nav>
 
-	<!-- Image in center -->
-	<div class="image-container">
-		<img src="images/IMG_3013.jpg" alt="Sky landscape">
-	</div>
 
-	<!-- Text below the image -->
-	<div class="text-container">
-		<h1>Welcome to My Website</h1>
-		<p>View and Shop some of my best photographs.</p>
-	</body>
-	 <footer>
- 		 <p>&copy;2023, Mansi Dinakar,Newark NJ 07103</p>
-	 </footer>
-	</html>
-		
-		
-		
-		
-		
-		
-	
+
+
