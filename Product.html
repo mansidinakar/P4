@@ -1,1 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-Q5t5r6a5s6Pvvx5z5nGn6KZzX8uUwnn6Uf0JwGgpKtuFeWuZ/Hw0E2a0bFddFg+" crossorigin="anonymous">
+    <style>
+      /* Footer styling */
+      footer {
+        background-color: #f8f9fa;
+        padding: 10px 0;
+        text-align: center;
+      }
 
+      /* Card styling */
+      .card {
+        margin: 10px;
+      }
+
+      /* Media queries for responsive design */
+      @media (max-width: 576px) {
+        .card-deck {
+          display: block !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MansiClicks</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+              <ul>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Products</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+              <ul>
+                <li><a href="#">Social Media</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cart</a>
+              <ul>
+                <li><a href="#">Billing Info</a></li>
+                <li><a href="#">Checkout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Product cards -->
+    <div class="container">
+      <div class="card-deck">
+        <div class="card">
+          <img
+            src="https://dummyimage.com/500x500/000/fff"
+            class="card-img-top"
+            alt="T-Shirt"
+          />
+          <div class="card-body">
+            <h5 class="card-title">T-Shirt</h5>
+            <p class="card-text">Price: $10</p>
+            <div class="form-group">
+              <label for="tshirtSize">Size:</label>
+              <input type="text" class="form-control" id="size" placeholder="Enter size">
+            </div>
+<!-- Products -->
+<div class="container my-5">
+  <div class="row">
+    <!-- T-shirt card -->
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/500x500.png?text=T-shirt" class="card-img-top" alt="T-shirt">
+        <div class="card-body">
+          <h5 class="card-title">T-shirt</h5>
+          <p class="card-text">$10</p>
+          <div class="form-group">
+            <label for="size">Size</label>
+            <select class="form-control" id="size">
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="color">Color</label>
+            <input type="text" class="form-control" id="color" placeholder="Enter color">
+          </div>
+          <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+    </div>
+    <!-- Mug card -->
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/500x500.png?text=Mug" class="card-img-top" alt="Mug">
+        <div class="card-body">
+          <h5 class="card-title">Mug</h5>
+          <p class="card-text">$6</p>
+          <div class="form-group">
+            <label for="color">Color</label>
+            <input type="text" class="form-control" id="color" placeholder="Enter color">
+          </div>
+          <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+    </div>
+    <!-- Book card -->
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/500x500.png?text=Book" class="card-img-top" alt="Book">
+        <div class="card-body">
+          <h5 class="card-title">Book</h5>
+          <p class="card-text">$6</p>
+          <div class="form-group">
+            <label for="type">Type</label>
+            <select class="form-control" id="type">
+              <option>Hardcover</option>
+              <option>Paperback</option>
+              <option>Ebook</option>
+            </select>
+          </div>
+          <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+    </div>
+    <!-- Wallpaper card -->
+    <div class="col-md-6 col-lg-3 mb-4">
+      <div class="card h-100">
+        <img src="https://via.placeholder.com/500x500.png?text=Wallpaper" class="card-img-top" alt="Wallpaper">
+        <div class="card-body">
+          <h5 class="card-title">Wallpaper</h5>
+          <p class="card-text">$3</p>
+          <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            </body>
+         <footer>
+  <p>&copy; 2023, Mansi Dinakar, Newark NJ 07103</p>
+</footer>
+          </html> 
