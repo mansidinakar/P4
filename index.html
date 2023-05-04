@@ -1,18 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>MansiClicks</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>MansiClicks</title>
+	<style>
+		/* CSS styling for the navigation bar */
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 1;
+		}
+		
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+		}
+		
+		nav ul li {
+			position: relative;
+			margin-right: 20px;
+		}
+		
+		nav ul li ul {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			background-color: #333;
+			display: none;
+			padding: 10px 0;
+		}
+		
+		nav ul li:hover ul {
+			display: block;
+		}
+		
+		nav ul li a {
+			color: #fff;
+			text-decoration: none;
+			padding: 10px;
+			display: block;
+		}
+		
+		nav ul li ul li {
+			margin: 0;
+		}
+		
+		nav ul li ul li a {
+			padding: 5px 10px;
+		}
+		
+		/* CSS styling for the image and text */
+		.image-container {
+			text-align: center;
+			margin-top: 100px;
+		}
+		
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+		
+		p {
+			text-align: center;
+		}
+	</style>
+</head>
 <body>
 
 	<!-- Navigation bar -->
 	<nav>
+		<h1>MansiClicks</h1>
 		<ul>
-			<li><a href="#">Home</a></li>
+			<li>
+				<a href="#">Home</a>
+			</li>
 			<li>
 				<a href="#">About Us</a>
 				<ul>
@@ -37,19 +108,23 @@
 	</nav>
 
 	<!-- Image in center -->
-	<div style="text-align: center;">
-		<img src="images/IMG_3013.jpg" size="50 px" alt="Sky Landcsape">
+	<div class="image-container">
+		<img src="images/IMG_3013.jpg" alt="Sky landscape">
 	</div>
 
 	<!-- Text below the image -->
-	<div style="text-align: center;">
+	<div class="text-container">
 		<h1>Welcome to My Website</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed massa quis ipsum dapibus malesuada. Suspendisse malesuada orci id augue laoreet dignissim. Donec vestibulum neque in porta facilisis. Nam posuere malesuada libero, ac tincidunt felis euismod sit amet.</p>
-	</div>
 	</body>
-	<footer>
+	 <footer>
  		 <p>&copy;2023, Mansi Dinakar,Newark NJ 07103</p>
-	</footer>
-
-
-</html>
+	 </footer>
+	</html>
+		
+		
+		
+		
+		
+		
+	
