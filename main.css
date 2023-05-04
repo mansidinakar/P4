@@ -46,21 +46,28 @@ footer {
 
 /* Index Page Styling */
 body.index {
-  background-color: #f4d4b4;
+  background-color: #F5DEB3; /* light brown */
 }
 
 /* About Page Styling */
 body.about {
-  background-color: #ffffcc;
+  background-color: yellow;
 }
 
 /* Shop Page Styling */
-.shop .card {
-  margin: 20px;
+.shop.card {
+  margin: 10px;
+}
+
+.shop.card-body {
+  background-color: #FFFFFF; /* white */
+  border: 1px solid #CCCCCC; /* light gray */
+  border-radius: 5px;
+  padding: 10px;
 }
 
 /* Checkout Page Styling */
 body.checkout {
-  background-color: #90ee90;
+  background-color: #98FB98;
 }
 
